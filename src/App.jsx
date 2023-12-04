@@ -5,16 +5,16 @@ import { motion } from 'framer-motion';
 const App = () => {
   return (
     <div>
-      <section>
+      <section id='Home'>
         <Navbar />
       </section>
-      <section>Parllax</section>
+      <section id='Services'>Parllax</section>
       <section>Services</section>
-      <section>Parallax</section>
+      <section id='Portfolio'>Parallax</section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
       <section>PortFolio3</section>
-      <section>Contact</section>
+      <section id='Contact'>Contact</section>
       {/* <Test /> */}
     </div>
   ) 
