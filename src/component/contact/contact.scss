@@ -30,11 +30,8 @@
             stroke: orange;
             position: absolute;
             margin: auto;
-
-            svg {
-
-
-            }
+            z-index: -1;
+            
         }
         
         form {
@@ -49,6 +46,7 @@
                 border: 2px solid whitesmoke;
                 border-radius: 5px;
                 color: whitesmoke;
+                font-size: larger;
             }
 
             button {
