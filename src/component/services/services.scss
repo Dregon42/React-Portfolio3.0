@@ -1,0 +1,25 @@
+.services {
+    background: linear-gradient(180deg, #15152b, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer{
+        flex: 1;
+    }
+
+    .titleContainer {
+        flex: 2;
+        img {
+            width: 300px;
+            height: 100px;
+            border-radius: 50px;
+            object-fit: contain;
+        }
+    }
+
+    .listContainer {
+        flex: 2;
+    }
+}

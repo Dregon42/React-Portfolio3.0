@@ -15,8 +15,8 @@ export default function Parallax({type}) {
         // the animation ends when the bottom of the target element reaches the top of the viewpoint
     })
 
-    const yBG = useTransform(scrollYProgress, ['0','1'], ['0%','200%'])
-    const yText = useTransform(scrollYProgress, ['0','1'], ['0%','100%'])
+    const yBG = useTransform(scrollYProgress, ['0','1'], ['0%','400%'])
+    const yText = useTransform(scrollYProgress, ['0','1'], ['0%','500%'])
     
   return (
     <div className='parallax' 
@@ -27,7 +27,13 @@ export default function Parallax({type}) {
                 ? 'linear-gradient(180deg, #111132, #0c0c1d)' 
                 : 'linear-gradient(180deg, #111128, #505064)'
     }} >
-        <motion.h1 style={{y: yText}}>{type === 'certifications' ? "Cetification" : "Projects"}</motion.h1>
+        <motion.h1 style={{y: yText}}>
+            {
+                type === 'certifications' 
+                ? "Turning lines of code into a symphony of functionality." 
+                : "Orchestrating a dance, where bugs are the unexpected twists that make the performance unforgettable."
+            }
+        </motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div className="planets" style={{
             y: yText,
