@@ -44,8 +44,8 @@ export default function Contact() {
         <motion.div className="textContainer" variants={variants}>
             <motion.h1>Let's Work Together</motion.h1>
             <motion.div className="item" variants={variants}>
-                <h2>Mail</h2>
-                <span>test@test.react</span>
+                <h2>Email</h2>
+                <span>lbrantl13@gmail.com</span>
             </motion.div>
             <motion.div className="item" variants={variants}>
                 <h2>Loaction</h2>
@@ -56,7 +56,7 @@ export default function Contact() {
             <motion.div className='email' 
                 initial={{opacity: 1}} 
                 whileInView={{opacity: 0}} 
-                transition={{delay: 3, duration: 1}}
+                transition={{delay: 3, duration: 1,}}
             >
                 <svg width="600px" height="600px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <motion.path 

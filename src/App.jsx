@@ -5,10 +5,12 @@ import Parallax from './component/parallax/Parallax';
 import Services from './component/services/Services';
 import Projects from './component/projects/Projects';
 import Contact from './component/contact/Contact';
+import Cursor from './component/cursor/Cursor';
 
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id='Home'>
         <Navbar />
         <Hero />
