@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .resume {
     background: linear-gradient(180deg, #15152b, #111132);
     height: 100%;
@@ -6,12 +8,24 @@
     justify-content: space-between;
     margin-bottom: 100px;
 
+    @include mobile {
+        width: 100%;
+    }
+
     .textContainer{
         flex: 1;
         align-self: flex-end;
         display: flex;
         gap: 20px;
         align-items: center;
+
+        @include mobile {
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+            // height: ;
+    
+        }
 
         p {
             font-weight: 200;
@@ -33,21 +47,42 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+            width: 100%;
+            
+        }
+
         .title {
             display: flex;
             align-items: center;
             gap: 50px;
 
+            @include mobile {
+                flex-direction: column;
+                text-align: center; 
+                height: 150px;
+                gap: 5px;
+            }
+
             img {
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
-                object-fit: cover
+                object-fit: cover;
+
+                @include mobile {
+                    display: none;
+                }
             }
 
             h1{
                 font-size: 96px;
                 font-weight: 100;
+
+                @include mobile {
+                    font-size: 36px;
+                    flex-wrap: wrap;
+                }
             }
 
             button{
@@ -58,6 +93,12 @@
                 border: 1px solid white;
                 font-size: 30px;
                 cursor: pointer;
+
+                @include mobile {
+                    font-size: 20px;
+                    width: 200px;
+                    height: 50px;
+                }
             }
         }
     }
@@ -69,7 +110,13 @@
         margin: auto;
         padding: auto;
         justify-content: center;
-        font-size: px;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+            top: 0;
+        }
         
         .box {
             width: 500px;
@@ -82,9 +129,22 @@
             border: 0.5px solid white;
             gap: 20px;
 
+            @include mobile {
+                width: 75%;
+                height: 100%;
+                align-self: center;
+                padding: 0;
+                
+            }
+
             h2 {
                 font-size: 40px;
                 align-self: center;
+
+                @include mobile {
+                    font-size: 24px;
+                    flex-direction: wrap;
+                }
             }
 
             .certs {
@@ -99,6 +159,11 @@
                 img {
                     height: 100px;
                     width: 100px;
+
+                    @include mobile {
+                        height:40px;
+                        width:40px;
+                    }
                 }
             }
 
@@ -110,6 +175,10 @@
                 height: 100%;
                 width: 100%;
                 font-size: 36px;
+
+                @include mobile {
+                    font-size: 12px;
+                }
             }
 
 
