@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import './services.scss';
+import './resume.scss';
 import { motion, useInView } from 'framer-motion';
 
 const variants = {
@@ -19,7 +19,7 @@ const variants = {
     }
 }
 
-export default function Services() {
+export default function Resume() {
     const ref = useRef();
     //when ever you to this section the animation will start
     const isInView = useInView(ref, {margin: '0px'})
@@ -37,14 +37,14 @@ export default function Services() {
     return (
         <motion.div 
             ref={ref}
-            className='services' 
+            className='resume' 
             variants={variants} 
             initial='initial' 
             animate={isInView && 'animate'}
         >
             <motion.div className="textContainer" variants={variants} >
                 <p>
-                    Certifications
+                    DevOps
                 </p>
                 <hr />
             </motion.div>
@@ -52,14 +52,14 @@ export default function Services() {
                 <div className="title">
                     <img src="/desktop.jpg" alt="" />
                     <h1>
-                        <motion.b whileHover={{color:'orange'}}>Unique</motion.b> Ideas
+                        <motion.b whileHover={{color:'orange'}}>Continuous</motion.b> Learning
                     </h1>
                 </div>
                 <div className="title">
-                    <h1>
+                    {/* <h1>
                         <motion.b whileHover={{color:'orange'}}>Unique</motion.b> Ideas
-                    </h1>
-                    <button>Here</button>
+                    </h1> */}
+                    <button>Download Resume</button>
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>

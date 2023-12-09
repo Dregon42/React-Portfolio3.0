@@ -55,17 +55,19 @@ export default function Hero() {
           <motion.h1 variants={textVariants}>Full Stack Developer and UI Designer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>See My Latest Works</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}><a href="Contact">Contact Me</a></motion.button>
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
+        {/* Need bigger photo with background removed before adding */}
+        <div className="imageContainer">
+          <img src="/IMG_2992_inPixio.png" alt="" />
+        </div>
       </div>
       <motion.div variants={sliderVariants} initial='initial' animate='animate' className="slidingTextContainer">
         React.Js  React-Native.Js  Redux  JavaScript   
       </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="" />
-      </div>
+      
     </div>
   )
 }

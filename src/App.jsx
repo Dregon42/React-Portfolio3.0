@@ -2,7 +2,7 @@ import './App.scss'
 import Navbar from './component/NavBar/Navbar';
 import Hero from './component/hero/Hero';
 import Parallax from './component/parallax/Parallax';
-import Services from './component/services/Services';
+import Resume from './component/resume/Resume';
 import Projects from './component/projects/Projects';
 import Contact from './component/contact/Contact';
 import Cursor from './component/cursor/Cursor';
@@ -15,19 +15,19 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id='Services'>
+      {/* <section id='Resume'>
         <Parallax type='certifications' />
-      </section>
-      <section>
-        <Services />
-      </section>
-      <section id='Projects'>
+      </section> */}
+      {/* <section>
+        <Resume />
+      </section> */}
+      {/* <section id='Projects'>
         <Parallax type='projects' />
-      </section>
-      <Projects />
-      <section id='Contact'>
+      </section> */}
+      {/* <Projects /> */}
+      {/* <section id='Contact'>
         <Contact />
-      </section>
+      </section> */}
     </div>
   ) 
 };

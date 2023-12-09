@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -9,6 +11,13 @@
         height: 100%;
         margin: 10px;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+        
+        }
+
         .textContainer {
             width: 60%;
             height: 100%;
@@ -16,6 +25,15 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
+            z-index: 1;
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
 
             h2 {
                 font-size: 30px;
@@ -25,6 +43,10 @@
 
             h1 {
                 font-size: 88px;
+
+                @include mobile {
+                    font-size: 34px;
+                }
             }
 
             .buttons {
@@ -64,5 +86,18 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @include mobile {
+            height: 55%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
