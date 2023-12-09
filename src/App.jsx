@@ -24,10 +24,10 @@ const App = () => {
       <section id='Projects'>
         <Parallax type='projects' />
       </section>
-      {/* <Projects /> */}
-      {/* <section id='Contact'>
+      <Projects />
+      <section id='Contact'>
         <Contact />
-      </section> */}
+      </section>
     </div>
   ) 
 };

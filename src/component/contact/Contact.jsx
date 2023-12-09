@@ -45,11 +45,11 @@ export default function Contact() {
             <motion.h1>Let's Work Together</motion.h1>
             <motion.div className="item" variants={variants}>
                 <h2>Email</h2>
-                <span>lbrantl13@gmail.com</span>
+                <p>lbrantl13@gmail.com</p>
             </motion.div>
             <motion.div className="item" variants={variants}>
                 <h2>Loaction</h2>
-                <span>Detroit, MI</span>
+                <p>Detroit, MI</p>
             </motion.div>
         </motion.div>
         <div className="formContainer">
