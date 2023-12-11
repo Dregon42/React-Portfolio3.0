@@ -15,8 +15,8 @@ export default function Parallax({type}) {
         // the animation ends when the bottom of the target element reaches the top of the viewpoint
     })
 
-    const yBG = useTransform(scrollYProgress, ['0','1'], ['0%','500%'])
-    const yText = useTransform(scrollYProgress, ['0','1'], ['0%','500%'])
+    const yBG = useTransform(scrollYProgress, ['0','1'], ['0%','300%'])
+    const yText = useTransform(scrollYProgress, ['0','1'], ['0%','300%'])
     
   return (
     <div className='parallax' 

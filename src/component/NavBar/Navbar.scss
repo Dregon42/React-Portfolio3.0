@@ -32,8 +32,13 @@ span {
     gap: 20px;
     align-items: center;
 
-    img {
-        height: 18px;
-        width: 18px;
+    a {
+        color: white;
+        
+        .items {
+            flex: 1;
+            height: 24px;
+            width: 24px;
+        }
     }
 }

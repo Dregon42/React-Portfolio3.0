@@ -21,7 +21,7 @@ const items = [
         id: 3,
         site: 'https://github.com/Dregon42/Flappy_Bird',
         title: 'Bounce Block',
-        img: '/screenshots/Nightlife.jpg',
+        img: '/screenshots/bouncey.png',
         caption: 'React-Native app, similar to the popular "Flappy Birds" phone app.'
     }
 ];
@@ -46,7 +46,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.caption}</p>
-                        <button><a href={item.site}>See Demo</a></button>
+                        <button><a href={item.site} target='_blank'>See Demo</a></button>
                     </motion.div>
                 </div>
             </div>
