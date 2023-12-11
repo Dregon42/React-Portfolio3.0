@@ -31,10 +31,10 @@ const Single = ({ item }) => {
 
     const {scrollYProgress} = useScroll({
         target:ref, 
-        // offset: ['start start', 'end start']
+
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [-100, 100 ]);
+    const y = useTransform(scrollYProgress, [0, 1], [-300, 300 ]);
 
     return (
         <section>
@@ -59,7 +59,7 @@ export default function Projects() {
 
     const {scrollYProgress} = useScroll({
         target:ref, 
-        // offset: ['end end', 'start end']
+        offset: ['end end', 'start end']
     });
 
     const scaleX = useSpring(scrollYProgress, {
