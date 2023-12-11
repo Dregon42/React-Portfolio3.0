@@ -59,14 +59,14 @@ export default function Hero() {
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
-        {/* Need bigger photo with background removed before adding */}
-        <div className="imageContainer">
-          <img src="/IMG_2992_inPixio.png" alt="" />
-        </div>
       </div>
       <motion.div variants={sliderVariants} initial='initial' animate='animate' className="slidingTextContainer">
         React.Js  React-Native.Js  Redux  JavaScript   
       </motion.div>
+      {/* Need bigger photo with background removed before adding */}
+      {/* <div className="imageContainer">
+        <img src="/IMG_2992_inPixio.png" alt="" />
+      </div> */}
       
     </div>
   )

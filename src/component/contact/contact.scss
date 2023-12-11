@@ -38,15 +38,9 @@
             }
         }
 
-        // h2 {
-
-        //     @include mobile {
-        //         display: none;
-        //     }
-        // }
 
         p {
-            font-weight: 300;
+            font-weight: 300px;
             color: white;
 
             @include mobile {
@@ -63,7 +57,7 @@
             width: 100%;
         }
 
-        .email {
+        .emailSvg {
             stroke: orange;
             position: absolute;
             margin: auto;
@@ -91,6 +85,7 @@
                 border-radius: 5px;
                 color: whitesmoke;
                 font-size: larger;
+
                 @include mobile {
                     padding: 10px;
                 }
@@ -102,7 +97,7 @@
                 border-radius: 10px;
                 background-color: orange;
                 cursor: pointer;
-                font-weight: bold;
+                font-weight: 500;
                 font-size: 30px;
                 width: 50%;
                 align-self: center;

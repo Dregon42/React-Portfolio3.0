@@ -40,7 +40,7 @@ export default function Resume() {
             className='resume' 
             variants={variants} 
             initial='initial' 
-            animate={'animate'}
+            animate={isInView && 'animate'}
         >
             <motion.div className="textContainer" variants={variants} >
                 <p>

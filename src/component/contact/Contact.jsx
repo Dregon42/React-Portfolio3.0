@@ -5,8 +5,8 @@ import emailjs from '@emailjs/browser';
 
 const variants = {
     initial: {
-        y: 500,
-        opacity: 1,
+        y: 0,
+        opacity: 0,
     },
     animate: {
         y: 0,
@@ -22,8 +22,9 @@ const variants = {
 export default function Contact() {
     const ref = useRef();
     const form = useRef();
+    const isInView = useInView(ref);
     const [error, setError] = useState(false);
-    const [success, setSuccess] = useState(false)
+    const [success, setSuccess] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -32,11 +33,9 @@ export default function Contact() {
         .then((result) => {
             setSuccess(true);
         }, (error) => {
-            setError(true)
+            setError(true);
         });
     };
-
-    const isInView = useInView(ref, {margin:'-100px'})
 
 
   return (
@@ -53,14 +52,14 @@ export default function Contact() {
             </motion.div>
         </motion.div>
         <div className="formContainer">
-            <motion.div className='email' 
+            <motion.div className='emailSvg' 
                 initial={{opacity: 1}} 
                 whileInView={{opacity: 0}} 
                 transition={{delay: 3, duration: 1,}}
             >
                 <svg width="600px" height="600px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <motion.path 
-                        stroke-width={0.2}
+                        stroke-width={0.3}
                         fill='none'
                         initial={{pathLength: 0}}
                         animate={isInView && {pathLength: 1}}
