@@ -20,11 +20,13 @@ section {
     padding: 10px;
     overflow: hidden;
 
+
 }
 
 @mixin mobile {
     @media (max-width: 738px) {
         @content;
+        
     }
 }
 

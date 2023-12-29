@@ -15,10 +15,17 @@ const items = [
         site: 'https://dancing-kangaroo-026fe2.netlify.app/',
         title: 'Meme Generator',
         img: '/screenshots/Meme.png',
-        caption: <><p>This Meme Generator is my <a href="https://publiclab.co/building-in-public" style={{color:'orange'}}>Build in Place</a> project. In this full stack application I utilized React.js, Flask, Redux, and Restful API'</p></>
+        caption: <>This Meme Generator is my <a href="https://publiclab.co/building-in-public" style={{color:'orange'}}>Build in Place</a> project. In this full stack application I utilized React.js, Flask, Redux, and Restful API'</>
     },
     {
         id: 3,
+        site: 'https://jovial-mochi-5771a2.netlify.app',
+        title: 'NomNom Navigator',
+        img: '',
+        caption: 'Used Yelp API to develope application to search for places to eat nearby.'
+    },
+    {
+        id: 4,
         site: 'https://github.com/Dregon42/Flappy_Bird',
         title: 'Bounce Block',
         img: '/screenshots/bouncey.png',

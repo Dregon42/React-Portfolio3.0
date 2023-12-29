@@ -67,7 +67,7 @@ export default function Resume() {
                     <h2>Certifications</h2>
                     <div className="certs">
                         {certs.map(cert =>
-                            <img src={`${cert}`} alt="" />
+                            <img src={`${cert}`} key={cert} alt="" />
                         )}
                     </div>
                 </motion.div>
