@@ -21,7 +21,7 @@ const items = [
         id: 3,
         site: 'https://jovial-mochi-5771a2.netlify.app',
         title: 'NomNom Navigator',
-        img: '',
+        img: '/screenshots/NomNom_screenshot.PNG',
         caption: 'Used Yelp API to develope application to search for places to eat nearby.'
     },
     {
@@ -30,6 +30,13 @@ const items = [
         title: 'Bounce Block',
         img: '/screenshots/bouncey.png',
         caption: 'React-Native app, similar to the popular "Flappy Birds" phone app.'
+    },
+    {
+        id: 5,
+        site: 'https://www.lanyapadvisory.com/',
+        title: 'Lanyap Advisory Website',
+        img: '/screenshots/Lanyap_screenshot.PNG',
+        caption: 'Degsigned Website for Lanyap Consulting using Wix platform'
     }
 ];
 
@@ -53,7 +60,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.caption}</p>
-                        <button><a href={item.site} target='_blank'>See Demo</a></button>
+                        <button><a href={item.site} target='_blank'>Visit Site</a></button>
                     </motion.div>
                 </div>
             </div>

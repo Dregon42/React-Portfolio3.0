@@ -10,13 +10,13 @@ export default function Navbar() {
     <nav>
       {/* Sidebar */}
       <SideBar />
-      <div className="wrapper">
+      <div className="wrapper">  
         <motion.span 
             initial={{opacity:0, scale:0.5}} 
             animate={{opacity:1, scale:1}}
             transition={{duration: 0.5}}
         >
-            L'Rae Brantley
+            Portfolio 3.0
         </motion.span>
         <div className="social">
             <a target='_blank' href="https://github.com/Dregon42"><FontAwesomeIcon className='items' icon={faGithub} /></a>

@@ -76,7 +76,7 @@ export default function Resume() {
                     <ul>
                         <li>Github</li>
                         <li>Figma</li>
-                        <li>Auth0</li>
+                        <li>Wix Studio</li>
                         <li>FireBase</li>
                         <li>Netlify</li>
                         <li>AWS</li>
