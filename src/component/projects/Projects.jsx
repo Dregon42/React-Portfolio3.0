@@ -37,6 +37,13 @@ const items = [
         title: 'Lanyap Advisory Website',
         img: '/screenshots/Lanyap_screenshot.PNG',
         caption: 'Degsigned Website for Lanyap Consulting using Wix platform'
+    },
+    {
+        id: 6,
+        site: 'https://github.com/Dregon42/React-Portfolio3.0',
+        title: 'NFT Marketplace',
+        img: '/video/Shortened_NFTVideo - Made with Clipchamp.mp4',
+        caption: 'Mobile application user interface of NFT marketplace.'
     }
 ];
 
@@ -54,8 +61,15 @@ const Single = ({ item }) => {
         <section>
             <div className="container">
                 <div className="wrapper">
-                    <div ref={ref} className="imageContainer" style={{width:700, height:500}}>
-                        <iframe src={item.img} alt={item.title} width="100%" height="100%" />
+                    <div ref={ref} className="imageContainer" style={{width:500, height:500}}>
+                        {/* ternary to add recording and photos  */}
+                        {
+                            item.id === 6 ? 
+                            <iframe src={item.img} alt={item.title} width='100%' height='100%'  />
+                            :
+                            <img src={item.img} alt={item.title} />
+                        }
+                        
                     </div>
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
