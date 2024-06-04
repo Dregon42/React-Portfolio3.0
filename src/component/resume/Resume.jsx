@@ -13,7 +13,7 @@ const variants = {
         y: 0,
         x: 0,
         transition: {
-            duration: 1,
+            duration: 0.1,
             staggerChildren: 0.1,
         }
     }
@@ -56,9 +56,9 @@ export default function Resume() {
                     </h1>
                 </div>
                 <div className="title">
-                    {/* <h1>
+                    <h1>
                         <motion.b whileHover={{color:'orange'}}>Unique</motion.b> Ideas
-                    </h1> */}
+                    </h1>
                     <button>Download Resume</button>
                 </div>
             </motion.div>
