@@ -35,43 +35,43 @@ export default function Resume() {
     ]
 
     return (
-        <motion.div 
+        <div 
             ref={ref}
             className='resume' 
-            variants={variants} 
+         
             initial='initial' 
             animate={isInView && 'animate'}
         >
-            <motion.div className="textContainer" variants={variants} >
+            <div className="textContainer" >
                 <p>
                     DevOps
                 </p>
                 <hr />
-            </motion.div>
-            <motion.div className="titleContainer" variants={variants}>
+            </div>
+            <div className="titleContainer">
                 <div className="title">
                     <img src="/desktop.jpg" alt="" />
                     <h1>
-                        <motion.b whileHover={{color:'orange'}}>Continuous</motion.b> Learning
+                        <b whileHover={{color:'orange'}}>Continuous</b> Learning
                     </h1>
                 </div>
                 <div className="title">
                     <h1>
-                        <motion.b whileHover={{color:'orange'}}>Unique</motion.b> Ideas
+                        <b whileHover={{color:'orange'}}>Unique</b> Ideas
                     </h1>
                     <button>Download Resume</button>
                 </div>
-            </motion.div>
-            <motion.div className="listContainer" variants={variants}>
-                <motion.div className="box" variants={variants}>
+            </div>
+            <div className="listContainer">
+                <div className="box">
                     <h2>Certifications</h2>
                     <div className="certs">
                         {certs.map(cert =>
                             <img src={`${cert}`} key={cert} alt="" />
                         )}
                     </div>
-                </motion.div>
-                <motion.div className="box" variants={variants}>
+                </div>
+                <div className="box">
                     <h2>Dev Tools</h2>
                     <ul>
                         <li>Github</li>
@@ -82,8 +82,8 @@ export default function Resume() {
                         <li>AWS</li>
                         <li>Insomnia</li>
                     </ul>
-                </motion.div>
-                <motion.div className="box" variants={variants}>
+                </div>
+                <div className="box">
                     <h2>Framewroks/Libraries</h2>
                     <ul>
                         <li>Framer.js</li>
@@ -93,9 +93,9 @@ export default function Resume() {
                         <li>React Native Engine</li>
                         <li>Flask</li>
                     </ul>
-                </motion.div>
+                </div>
             
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     )
 }
