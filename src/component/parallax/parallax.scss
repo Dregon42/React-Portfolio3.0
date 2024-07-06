@@ -47,9 +47,7 @@
         z-index: 2;
 
         @include mobile {
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position-y: 150px;
+            display: none;
         }
     }
 
