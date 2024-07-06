@@ -6,6 +6,7 @@
     background: linear-gradient(180deg, #111128, #111132);
     position: relative;
 
+
     .wrapper {
         max-width: 1366px;
         height: 100%;
@@ -42,7 +43,7 @@
             }
 
             h1 {
-                font-size: 88px;
+                font-size: 69px;
 
                 @include mobile {
                     font-size: 34px;
@@ -65,7 +66,12 @@
 
             img {
                 width: 50px;
+
+                @include mobile {
+                    display: none;
+                }
             }
+
         }
 
     }
@@ -73,7 +79,7 @@
     .slidingTextContainer {
         position: absolute;
         font-size: 50vh;
-        bottom: -120px;
+        bottom: -90px;
         white-space: nowrap;
         color: #ffffff09;
         width: 50%;
