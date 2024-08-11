@@ -6,11 +6,12 @@ import Resume from './component/resume/Resume';
 import Projects from './component/projects/Projects';
 import Contact from './component/contact/Contact';
 import Cursor from './component/cursor/Cursor';
+import { Maintenance } from './component/maintenance/Maintenance';
 
 const App = () => {
   return (
-    <div>
-      <Cursor />
+    <div id='portfolio-page'>
+      {/* <Cursor />
       <section id='Home'>
         <Navbar />
         <Hero />
@@ -27,6 +28,9 @@ const App = () => {
       <Projects />
       <section id='Contact'>
         <Contact />
+      </section> */}
+      <section>
+        <Maintenance id='Maintenance'/>
       </section>
     </div>
   ) 

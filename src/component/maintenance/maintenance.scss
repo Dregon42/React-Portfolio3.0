@@ -1,0 +1,42 @@
+@import '../../App.scss';
+
+.maint {
+    // background-color: transparent;
+    background-image: url('/under_maint.jpg');
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        h1 {
+            font-size: 5rem;
+
+            @include mobile {
+                font-size: x-large;
+            }
+        }
+
+        h3 {
+            font-size: 2rem;
+
+            @include mobile {
+                font-size: medium;
+            }
+        }
+    }
+}
