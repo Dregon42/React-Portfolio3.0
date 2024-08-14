@@ -2,14 +2,16 @@
 
 .resume {
     background: linear-gradient(180deg, #15152b, #111132);
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 100px;
+;
 
     @include mobile {
         width: 100%;
+        height: auto;
         padding: 20px;
     }
 
@@ -126,10 +128,10 @@
         }
         
         .box {
-            width: 500px;
-            height: 400px;
+            width: 100%;
+            height:300px;
             background-color: transparent;
-            padding: 50px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -154,25 +156,31 @@
                 }
             }
 
-            .certs {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                height: 100%;
+            .certContainer {
+                padding: 0%;
 
-                
-                img {
-                    height: 100px;
-                    width: 100px;
-
-                    @include mobile {
-                        height:40px;
-                        width:40px;
+                .certs {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    padding: 2px;
+    
+                    
+                    img {
+                        height: 100px;
+                        width: 100px;
+    
+                        @include mobile {
+                            height:40px;
+                            width:40px;
+                        }
                     }
                 }
             }
+
 
             ul {
                 display: flex;
@@ -181,7 +189,7 @@
                 list-style: none;
                 height: 100%;
                 width: 100%;
-                font-size: 36px;
+                font-size: 30px;
 
                 @include mobile {
                     font-size: 12px;

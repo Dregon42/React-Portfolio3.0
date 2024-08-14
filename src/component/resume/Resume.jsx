@@ -65,10 +65,12 @@ export default function Resume() {
             <div className="listContainer">
                 <div className="box">
                     <h2>Certifications</h2>
-                    <div className="certs">
-                        {certs.map(cert =>
-                            <img src={`${cert}`} key={cert} alt="" />
-                        )}
+                    <div className='certContainer'>
+                        <div className="certs">
+                            {certs.map(cert =>
+                                <img src={`${cert}`} key={cert} alt="" />
+                            )}
+                        </div>
                     </div>
                 </div>
                 <div className="box">
@@ -80,17 +82,16 @@ export default function Resume() {
                         <li>FireBase</li>
                         <li>Netlify</li>
                         <li>AWS</li>
-                        <li>Insomnia</li>
+                        <li>Postman</li>
                     </ul>
                 </div>
                 <div className="box">
-                    <h2>Framewroks/Libraries</h2>
+                    <h2>Framework/Libraries</h2>
                     <ul>
                         <li>Framer.js</li>
                         <li>React.js</li>
                         <li>React-Native.js</li>
                         <li>Matters.js</li>
-                        <li>React Native Engine</li>
                         <li>Flask</li>
                     </ul>
                 </div>

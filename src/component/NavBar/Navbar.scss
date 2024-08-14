@@ -2,6 +2,8 @@
 
 nav {
     height: 100px;
+    background-color: transparent;
+    color: black;
 }
 
 .wrapper {
@@ -31,9 +33,12 @@ span {
     display: flex;
     gap: 20px;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 3px 10px;
 
     a {
-        color: white;
+        color: black;
         
         .items {
             flex: 1;

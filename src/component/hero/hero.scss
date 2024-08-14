@@ -3,8 +3,12 @@
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
-    background: linear-gradient(180deg, #111128, #111132);
+    background: linear-gradient(180deg, white, gray);
     position: relative;
+    transform: skewY(-10px) translateY(65px);
+
+    // Ensure transformation is applied from the bottom-left corner
+    transform-origin: bottom left;
 
 
     .wrapper {
@@ -38,12 +42,19 @@
 
             h2 {
                 font-size: 30px;
-                color: rebeccapurple;
-                letter-spacing: 10px;
+                color: black;
+                letter-spacing: 1px;
+
+                span {
+                    font-weight: 800;
+                }
             }
 
             h1 {
                 font-size: 69px;
+                font-weight: 100;
+                color: black;
+                font-style: italic;
 
                 @include mobile {
                     font-size: 34px;

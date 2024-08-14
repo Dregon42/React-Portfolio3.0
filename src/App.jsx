@@ -11,7 +11,7 @@ import { Maintenance } from './component/maintenance/Maintenance';
 const App = () => {
   return (
     <div id='portfolio-page'>
-      {/* <Cursor />
+      <Cursor />
       <section id='Home'>
         <Navbar />
         <Hero />
@@ -28,7 +28,7 @@ const App = () => {
       <Projects />
       <section id='Contact'>
         <Contact />
-      </section> */}
+      </section>
       <section>
         <Maintenance id='Maintenance'/>
       </section>

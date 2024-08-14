@@ -16,11 +16,11 @@ export default function Navbar() {
             animate={{opacity:1, scale:1}}
             transition={{duration: 0.5}}
         >
-            Portfolio 3.0
+          Portfolio 3.0
         </motion.span>
-        <div className="social">
-            <a target='_blank' href="https://github.com/Dregon42"><FontAwesomeIcon className='items' icon={faGithub} /></a>
-            <a target='_blank' href="https://www.linkedin.com/in/th3-p1v0t/"><FontAwesomeIcon className='items' icon={faLinkedin} /></a>
+        <div className="social" >
+          <a target='_blank' href="https://github.com/Dregon42"><FontAwesomeIcon className='items' icon={faGithub} /></a>
+          <a target='_blank' href="https://www.linkedin.com/in/th3-p1v0t/"><FontAwesomeIcon className='items' icon={faLinkedin} /></a>
         </div>
       </div>
     </nav>

@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    background-color: #0c0c1d;
+    background-color: transparent;
     color: lightgray;
 }
 
@@ -21,6 +21,14 @@ section {
     overflow: hidden;
 
 
+}
+
+#Home {
+
+    transform: skewY(-10px) translateY(65px);
+
+    // Ensure transformation is applied from the bottom-left corner
+    transform-origin: bottom left;
 }
 
 @mixin mobile {

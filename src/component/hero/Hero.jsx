@@ -51,8 +51,8 @@ export default function Hero() {
           initial="initial" 
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>L'Rae Brantley</motion.h2>
-          <motion.h1 variants={textVariants}>Full Stack Developer and UI Designer</motion.h1>
+          <motion.h2 variants={textVariants}>Hi, I'm <span>L'Rae Brantley</span></motion.h2>
+          <motion.h1 variants={textVariants}>Full Stack Developer <br/> and UI/UX Designer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}><a href="#Projects">See My Latest Works</a></motion.button>
             <motion.button variants={textVariants}><a href="#Contact">Contact Me</a></motion.button>
